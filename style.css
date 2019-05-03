@@ -10,10 +10,12 @@ button {
 	border-radius: 12.5px;
 	border-style: none;
 	cursor: pointer;
+	display: block;
 	height: auto;
 	padding: 10px;
 	margin : 5px 20px;
 	width: auto;
+	--webktit-display:block;
 }
 
 h1 {

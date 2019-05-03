@@ -2,11 +2,7 @@ body, html {
 	height: auto;
 	margin: 0;
 	overflow: hidden;
-	width: 100%;
-}
-
-html {
-	max-width: 100%
+	max-width: 100%;
 }
 
 button {
@@ -17,7 +13,7 @@ button {
 	display: block;
 	height: auto;
 	padding: 10px;
-	margin : 5px 20px;
+	margin : 5px;
 	width: auto;
 	--webktit-display:block;
 }

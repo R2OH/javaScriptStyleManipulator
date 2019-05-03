@@ -16,6 +16,14 @@ button {
 	width: auto;
 }
 
+h1 {
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+}
+
 #toolbar {
 	background-color: lightblue;
 	display: grid;

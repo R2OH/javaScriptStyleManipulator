@@ -1,0 +1,27 @@
+body, html {
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+button {
+	background-color: orange;
+	border-radius: 12.5px;
+	border-style: none;
+	cursor: pointer;
+	height: auto;
+	padding: 10px;
+	margin : 5px 20px;
+	width: auto;
+}
+
+#toolbar {
+	background-color: lightblue;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

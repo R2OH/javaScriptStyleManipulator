@@ -5,6 +5,10 @@ body, html {
 	width: 100%;
 }
 
+html {
+	max-width: 100%
+}
+
 button {
 	background-color: orange;
 	border-radius: 12.5px;

@@ -34,4 +34,4 @@ $(document).ready(function() {
 		alert("Goodbye!")
 	};
 
-alert("script.js ready!");
+});

@@ -1,37 +1,47 @@
 $(document).ready(function() {
 
 	var arr = [
-		"button0",
-		"button1",
-		"button2",
-		"button3",
-		"button4"];
-	const  comicSans = "Comic Sans"
+		"biggerBtn",
+		"smallerBtn",
+		"colorBtn",
+		"fontBtn",
+		"displayBtn"];
+	var color = "green";
+	var display = "none";
+	var font = "Comic Sans MS";
+	var fontFallback = "cursive";
+	var fontSize = parseInt($("*").css("font-size"));
+	var serif = "sans-serif";
 
-	$("#button0").click(function() {
-		$("*").css({"font-size": "30px"})
+
+	$("#biggerBtn").click(function() {
+		fontSize+=2;
+		$("*").css({"font-size": fontSize + "px"});
+		console.log("My new font-size is " + fontSize  + "!");
 	});
 
-	$("#button1").click(function() {
-		$("*").css({"font-size": "12px"})
+	$("#smallerBtn").click(function() {
+		fontSize-=2;
+		$("*").css({"font-size": fontSize + "px"});
+		console.log("My new font-size is " + fontSize  + "!");
 	});
 
-	$("#button2").click(function() {
-		$("*").css({"background-color": "green"})
+	$("#colorBtn").click(function() {
+		$("*").css({"background-color": color});
 	});
 
-	$("#button3").click(function() {
-		$("*").css({"font-family": "Comic Sans MS"})
+	$("#fontBtn").click(function() {
+		$("*").css({"font-family": font, fontFallback, serif});
 	});
 
-	$("#button4").click(function() {
-		$("*").css({"display": "none"})
+	$("#displayBtn").click(function() {
+		$("*").css({"display": display});
 	});
 	
-	document.getElementById("button4").onclick = function() {goodbye()};
+	document.getElementById("displayBtn").onclick = function() {goodbye()};
 
 	function goodbye() {
-		alert("Goodbye!")
+		alert("Goodbye!");
 	};
 
 });
